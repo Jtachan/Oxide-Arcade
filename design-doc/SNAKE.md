@@ -1,5 +1,9 @@
 # Snake Game
 
+- [Concept](#concept)
+- [Visuals](#visuals)
+- [Game Mechanics](#game-mechanics)
+
 ## Concept
 
 The `Snake Game` presents a simple area on the screen with two items in it: a line of pixels representing a snake and a single 'pixel' (representations may vary) representing the "orb" the snake must eat.
@@ -31,6 +35,7 @@ The area of each pixel allows to represent multiple objects:
 | Orb 2      | <div style="text-align:center">x - x<br>- - -<br>x - x</div> |
 | Wall       | <div style="text-align:center">xxx<br>- - -<br>- - -</div>   |
 | Corner     | <div style="text-align:center">- - x<br>- - -<br>- - -</div> |
+| Empty     | <div style="text-align:center">- - -<br>- - -<br>- - -</div> |
 
 > [!Note]
 > Some representations (like the head) differ from the original game.
@@ -51,3 +56,35 @@ To simplify the process, the dimension will be **fixed** at `720x640`.
 
 Only two colors are to be used: one for background and one for coloring the position of each [pixel](#pixels).
 These colors are to be black (`#000000`) and green (`#008000`) or olive (`#808000`), referencing to the colors displayed at the image within this document (Nokia Snake).
+
+## Game Mechanics
+
+### Movement
+
+The snake moves forward constantly, where the next place it will be is the immediate pixel in front of the head.
+The user has the control to select what is the next orientation the snake will move, with the orientations being the four cardinal points (North, South, East and West).
+
+The only **limitation** for the user is that the snake cannot move backwards; the next space to move must be either in front of it or to either its sides.
+For example, if a snake moves from West to East, the user can select to move either to its left (North), forward (East) or to its right (South), but never to the back (West).
+
+If the user does not provide any input for selecting the next direction, the snake will move forward.
+
+### Progression
+
+The goal of the game is to get as many orbs as possible without dying (see [Game Over](#game-over)).
+Each obtained orb affects to the progression as:
+
+- Increasing in 10 points the total score.
+- Increasing in 1 the length of the snake.
+- Multiplying by 1.05 the speed the snake moves.
+
+When an orb is obtained, a new orb appears randomly in the playable area on top of an empty pixel.
+
+### Game Over
+
+The snake will die only if, when moving forward, it clashes onto:
+
+- Another piece of its body.
+- A wall.
+
+In other words, a snake can only move onto an empty pixel or onto a pixel with the orb.

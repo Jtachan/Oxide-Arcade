@@ -4,4 +4,4 @@ Changelog
 Version v0.0.1 - 2026.11.18
 ---------------------------
 ADDED:
-    - Snake: Concept and Visuals
+    - Snake: Complete design document (first iteration)
