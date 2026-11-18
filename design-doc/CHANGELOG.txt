@@ -1,16 +1,7 @@
 Changelog
 =========
 
-Version vX.Y.Z - YYYY.mm.dd (release date)
+Version v0.0.1 - 2026.11.18
 ---------------------------
 ADDED:
-    - 
-
-CHANGED:
-    - 
-
-FIXED:
-    - 
-
-DEPRECATED:
-    - 
+    - Snake: Concept and Visuals
