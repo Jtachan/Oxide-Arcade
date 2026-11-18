@@ -4,6 +4,10 @@
 - [Visuals](#visuals)
 - [Game Mechanics](#game-mechanics)
 
+[Wikipedia Link](https://en.wikipedia.org/wiki/Snake_(video_game_genre))
+
+---
+
 ## Concept
 
 The `Snake Game` presents a simple area on the screen with two items in it: a line of pixels representing a snake and a single 'pixel' (representations may vary) representing the "orb" the snake must eat.

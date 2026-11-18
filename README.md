@@ -8,8 +8,8 @@ This documentation can be found within the `design-doc/` folder.
 
 The three games that define the goal of `oxide-arcade` are (in ascending difficulty order):
 
-| Game | Design Document | Progress |
-|------|-----------------|----------|
-| [**Pong**](https://es.wikipedia.org/wiki/Pong) | ~~Link~~ | WIP|
-| [**Snake**](https://en.wikipedia.org/wiki/Snake_(video_game_genre)) | [Link](design-doc/SNAKE.md)| WIP          |
-| [**Tetris**](https://en.wikipedia.org/wiki/Tetris_(NES_video_game))     | ~~Link~~         | WIP         |
+| Game  | Progress|
+| ---| ---|
+| [**Pong**](design-doc/PONG.md) | WIP|
+| [**Snake**](design-doc/SNAKE.md) | WIP       |
+| [**Tetris**](design-doc/TETRIS.md) | WIP         |
