@@ -56,4 +56,11 @@ While colors are not crucial for the game, this arcade will use three colors:
 There are two important movements in the development of the game:
 
 - **Player**: Each player can move their own paddle up and down, within the field limits. The speed of each paddle is the same and always fixed.
-- **Ball**: ...
+    - **Player 1** (left paddle): W/A moves the paddle upwards, S/D downwards.
+    - **Player 2** (right paddle): Arrows up/left moves the paddle upwards, down/right downwards.
+- **Ball**: It moves from side to side, bouncing on each player's paddle and on the top/bottom walls. Its speed should increase each time it bounces against a player's paddle.
+
+### Game Over
+
+The game ends when one player reaches 3 points, becoming the winner.
+For simplicity purposes, this threshold is fixed.
